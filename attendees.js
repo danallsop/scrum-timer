@@ -8,9 +8,9 @@
 const SCRUM_CONFIG = {
     timeLimit: 60,
     attendees: [
-        { name: 'Dan' },
-        { name: 'Rohit' },
-        { name: 'Harpreet', absent: true },
-        { name: 'Tracey' }
+        { name: 'Dan', absent: false },
+        { name: 'Rohit', absent: false },
+        { name: 'Harpreet', absent: true }, // excluded today
+        { name: 'Tracey', absent: false }
     ]
 };
