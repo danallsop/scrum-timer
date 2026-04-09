@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.timer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+#currentSpeaker {
+    color: #333;
+    font-size: 6em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.timer-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.time {
+    font-size: 6em;
+    font-weight: bold;
+    color: #179A64;
+}
+
+.time.over-time {
+    color: #ff174D;
+}
+
+.btn-large {
+    padding: 16px 60px;
+    font-size: 1.2em;
+    min-width: 200px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #000000;
+    color: white;
+}
+
+.btn-large[disabled],
+.btn-large.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .time {
+        font-size: 5em;
+        letter-spacing: 5px;
+    }
+
+    #currentSpeaker {
+        font-size: 2.5em;
+        letter-spacing: 1px;
+    }
+
+    .timer-section {
+        gap: 30px;
+    }
+
+    .btn-large {
+        padding: 14px 40px;
+        font-size: 1.1em;
+        min-width: 150px;
+    }
+}
