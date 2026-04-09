@@ -20,10 +20,10 @@ Edit `attendees.js` to manage the team roster:
 const SCRUM_CONFIG = {
     timeLimit: 60,       // seconds per person
     attendees: [
-        { name: 'Dan' },
-        { name: 'Rohit' },
+        { name: 'Dan', absent: false },
+        { name: 'Rohit', absent: false },
         { name: 'Harpreet', absent: true }, // excluded today
-        { name: 'Tracey' }
+        { name: 'Tracey', absent: false }
     ]
 };
 ```
